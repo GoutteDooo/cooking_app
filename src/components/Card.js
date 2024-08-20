@@ -27,7 +27,7 @@ const Card = ({ recette }) => {
     <div className="card">
       <li>
         <h3>{recette.strMeal}</h3>
-        <img src={recette.strMealThumb} alt={`photo de ${recette.strMeal}`} />
+        <img src={recette.strMealThumb} alt={`${recette.strMeal}`} />
         <ul>
           <h5>Ingrédients</h5>
           {ingredientsList}
