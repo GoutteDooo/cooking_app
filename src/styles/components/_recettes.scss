@@ -1,0 +1,24 @@
+.recettes {
+    h1 {
+        @include verticalCenter;
+    }
+    ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .search-container {
+        display: flex;
+        height: 30px;
+        border-radius: 20px;
+        align-items: center;
+        justify-content: center;
+        input {
+            margin-left: 5px;
+            background: rgb(255, 255, 225);
+            border-radius: 10px;
+            padding-left: 10px;
+            height: 30px;
+        }
+    }
+}

@@ -1,0 +1,68 @@
+.card {
+    position: relative;
+    flex: 1 0 20%;
+    border: 1px solid orange;
+    border-radius: 10px;
+    box-shadow: 0 0 3px orangered;
+    background: rgb(255, 255, 235);
+    width: 320px;
+    max-width: 400px;
+    margin: 10px;
+    padding: 10px;
+    li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+        h3 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 2rem;
+            margin: 5px;
+        }
+        img {
+            height: 300px;
+            width: 300px;
+            box-shadow: 0 0 2px black;
+            border-radius: 50%;
+        }
+        ul {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h5 {
+                font-size: 1.5rem;
+                margin: 10px;
+            }
+            li {
+                margin: 2px;
+            }
+            .cardLinks {
+                position: absolute;
+                display: flex;
+                justify-content: space-evenly;
+                width: 100%;
+                bottom: 20px;
+                .ytLink {
+                    color: red;
+                    &:hover {
+                        color: orangered;
+                        transform: scale(1.1);
+                        transition: 0.2s;
+                    }
+                }
+                .sourceLink {
+                    color: black;
+                    &:hover {
+                        color: grey;
+                        transform: scale(1.1);
+                        transition: 0.2s;
+                    }
+                }
+            }
+        }
+        
+    }
+}

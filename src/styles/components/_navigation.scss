@@ -1,0 +1,42 @@
+.navigation {
+    ul {
+        display: flex;
+        align-items: center;
+        margin: 10px;
+        background: rgba(247, 255, 135, 0.671);
+        border-radius: 15px;
+        height: 50px;
+        a {
+            text-decoration: none;
+            margin: 10px;
+            li {
+                position: relative;
+                color: orangered;
+                font-size: 1.2rem;
+                &:hover {
+                    transition: 0.2s;
+                    color: blueviolet;
+                    &::after {
+                        position: absolute;
+                        opacity: 0;
+                        content: "";
+                        height: 4px;
+                        width: 100%;
+                        left: 0%;
+                        bottom: -40%;
+                        background: blueviolet;
+                        border-radius: 5px;
+                        animation: afterAppear 0.5s forwards;
+                    }
+                    @keyframes afterAppear {
+                        to {
+                            opacity: 1;
+                        }
+                    }
+                    // border-bottom: 1px solid blueviolet;
+                    // padding-bottom: 5px
+                }
+            }
+        }
+    }
+}

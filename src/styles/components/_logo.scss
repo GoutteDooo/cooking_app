@@ -1,0 +1,12 @@
+.logo {
+    h1 {
+        @include verticalCenter;
+        margin: 20px auto 0 auto;
+        background: url(../../assets/img/logo.webp) center/cover;
+        width: 250px;
+        height: 70px;
+        color: rgb(239, 255, 96);
+        box-shadow: 0 0 5px black;
+        border-radius: 20px;
+    }
+}
